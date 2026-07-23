@@ -5,37 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Site Title</title>
   
-  <style>
-    body {
-      /* Point to your image file location */
-      background-image: url('background.png'); 
-      
-      /* Stretches the image to cover the entire window */
-      background-size: cover; 
-      
-      /* Centers the image on screen */
-      background-position: center; 
-      
-      /* Prevents the image from repeating as a tile */
-      background-repeat: no-repeat; 
-      
-      /* Keeps the background fixed in place when scrolling */
-      background-attachment: fixed; 
-      
-      /* Fallback background color if the image takes time to load */
-      background-color: #121212; 
-      
-      /* Make sure text readable on dark backgrounds */
-      color: #ffffff; 
-      margin: 0;
-      font-family: sans-serif;
+	<style>
+	  /* 1. Load your uploaded font */
+	  @font-face {
+		font-family: 'myfavoritefont';
+		src: url('myfavoritefont.ttf') format('truetype');
+	  }
+
+	  body {
+		background-image: url('background.png'); 
+		background-size: cover; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-attachment: fixed; 
+		background-color: #121212; 
+		color: #ffffff; 
+		margin: 0;
+		
+		/* Apply custom font globally */
+		font-family: 'myfavoritefont', sans-serif;
+	  }
+
+	  .content-box {
+		max-width: 650px;
+		margin: 60px auto;
+		padding: 30px;
+		background-color: rgba(0, 0, 0, 0.75); 
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	  }
+
+	  /* 2. Apply outline to headings or text */
+	  h1 {
+		-webkit-text-stroke: 1.5px #000000;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+	  }
+	</style>
+
+    /* Content container box placed INSIDE <style> */
+    .content-box {
+      max-width: 650px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: rgba(196, 196, 196, 1); /* Semi-transparent dark box */
+      border-radius: 0px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to my site</h1>
-  <p>Your content goes here!</p>
+  <!-- Wrap your text in the content-box div -->
+  <div class="content-box">
+    <h1>Welcome to my site</h1>
+    <p>Your content goes here!</p>
+  </div>
 
 </body>
 </html>
