@@ -36,11 +36,18 @@
 	  }
 
 	  /* 2. Apply outline to headings or text */
-	  h1 {
+	  h1
+	  {
 		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
 	  }
-	  
-	  p {
+	  h3
+	  {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
+	  }
+	  p
+	  {
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 	  }
 	</style>
@@ -54,16 +61,56 @@
       border-radius: 1px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
+	
+	.center-text
+	{
+		text-align: center;
+	}
+	
+	.text-big
+	{
+		font-size: 36px;
+	}
+	
+	.text-medium
+	{
+		font-size: 24px;
+	}
+	
+	.text-small
+	{
+		font-size: 16px;
+	}
+	
+		.image-container {
+	  max-width: 650px;
+	  margin: 20px auto; /* Adds space between your text box and the image */
+	  text-align: center; /* Centers the image horizontally */
+	}
+
+	/* Make sure the image doesn't overflow small screens */
+	.image-container img {
+	  max-width: 100%;
+	  height: auto;
+	  border-radius: 12px; /* Optional: gives the image smooth rounded corners */
+	  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: dark drop shadow */
+	}
+	
   </style>
+  
 </head>
 <body>
 
   <!-- Wrap your text in the content-box div -->
   <div class="content-box">
     <h1>Welcome!!</h1>
-	<h3>And thank you so much for stopping by!!</h3>
-    <p>This is a silly little page for me to dump all my writings, and post some info so the interwebs knows who I am!</p>
+	<p class="center-text text-medium">And thank you so much for stopping by!!</h3>
+    <p class="center-text">This is a silly little page for me to dump all my writings, and post some info so the interwebs knows who I am!</p>
   </div>
+
+	<div class="image-container">
+		<img src="itsme.png" alt="My persona, Whirly">
+	</div>
 
 </body>
 </html>
