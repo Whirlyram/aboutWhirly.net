@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Truth</title>
+  
+	<style>
+	  /* 1. Load your uploaded font */
+	  @font-face {
+		font-family: 'pressurefont';
+		src: url('https://whirlyram.github.io/aboutWhirly.net/fonts/pressure-font.ttf') format('truetype');
+	  }
+	  body {
+		background-image: url('https://raw.githubusercontent.com/Whirlyram/aboutWhirly.net/refs/heads/main/gradientbg.png'); 
+		background-size: cover; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-attachment: fixed; 
+		background-color: #121212; 
+		color: #ffffff; 
+		margin: 0;
+		
+		/* Apply custom font globally */
+		font-family: 'pressurefont', sans-serif;
+	  }
+
+	  .content-box {
+		max-width: 650px;
+		margin: 60px auto;
+		padding: 30px;
+		background-color: rgba(0, 0, 0, 0.75); 
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	  }
+
+	  /* 2. Apply outline to headings or text */
+	  h1
+	  {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
+	  }
+	  h3
+	  {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
+	  }
+	  p
+	  {
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+		text-stroke: 2px 2px 2px rgba(0, 0, 0, 1);
+	  }
+	</style>
+
+  <style>
+    .content-box {
+      max-width: 650px;
+      margin: 60px auto;
+      padding: 12px;
+      background-color: rgba(196, 196, 196, 1); /* Semi-transparent dark box */
+      border-radius: 1px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+	
+	.center-text
+	{
+		text-align: center;
+	}
+	
+	.text-big
+	{
+		font-size: 36px;
+	}
+	
+	.text-medium
+	{
+		font-size: 26px;
+	}
+	
+	.text-small
+	{
+		font-size: 21px;
+	}
+	
+	.text-tiny
+	{
+		font-size: 17px;
+	}
+	
+		.image-container {
+	  max-width: 244px;
+	  margin: 20px auto; /* Adds space between your text box and the image */
+	  text-align: center; /* Centers the image horizontally */
+	}
+
+	/* Make sure the image doesn't overflow small screens */
+	.image-container img {
+	  max-width: 100%;
+	  height: auto;
+	  border-radius: 3px; /* Optional: gives the image smooth rounded corners */
+	  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: dark drop shadow */
+	}
+  </style>
+  
+</head>
+<body>
+
+	<div class="content-box">
+		<p class="center-text text-medium">If Agent Whirlwind Ever Found Out</h3>
+		<p class="center-text">The transcript of an audio log that Agent Whirlwind would leave behind if she were to ever discover that she is half-angel, and that Urbanshade had been keeping it a secret to her in order to maximize her 'efficiency'</p>
+	</div>
+
+	<div>
+		<p class="center-text text-medium">I know how the system works, anyone with the right clearance can listen to this.</p>
+		<p class="center-text text-medium">And don't even bother trying to drug me up with amnestics; we're all well aware that it won't do shit.</p>
+		<p class="center-text text-medium">To anyone who isn't Mr.Shade, know that I hold no negativity to you, you are just trying to be the light in a sea of darkness.</p>
+		<p class="center-text text-medium">So, I end off with one final message to you, Mr.Shade.</p>
+		<p class="center-text text-medium">I knew monsters were real the day your organization recruited me—the day the cuts I made on my arms would finally mend.</p>
+		<p class="center-text text-medium">You taught me that as a kid, the monster under my bed wasn't my imagination, but I could have never fathomed that I would be working for one.</p>
+		<p class="center-text text-medium">And you of all people should know the weight behind these words, knowing this comes from the gal who looked her parents' murderer in the eye and offered forgiveness:</p>
+		<p class="center-text text-medium">when your stupid immortality crystal finally runs out, and you spend your last fleeting moments withering away in that wheelchair, may you rot in hell, you tank-treading bastard.</p>
+	<div>
+</body>
+</html>
