@@ -111,6 +111,47 @@
 		color: #BE4AFF
 	}
 	
+		a
+	{
+		text-decoration: none;
+		color: #FFFFEB;
+	}
+	
+	a:hover
+	{
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+	
+	.tooltip
+	{
+		position: relative;
+		cursor: pointer;
+	}
+
+	.tooltip-text
+	{
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		bottom: 125%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #222;
+		color: #fff;
+		padding: 6px 10px;
+		border-radius: 2px;
+		white-space: nowrap;
+		font-size: 0.85em;
+		transition: opacity 1.5s ease;
+		z-index: 10;
+	}
+
+	.tooltip:hover .tooltip-text {
+		visibility: visible;
+		opacity: 1;
+	}
+	
   </style>
   
 </head>
@@ -140,7 +181,14 @@
 		<h1>My Various Pieces of Work!! :D</h1>
 		<br>
 		<p class="center-text text-small">Musics</p>
-		<p class="center-text text-small">Creative Writing Doodles/Blurbs</p>
+			</div>
+			<p class="center-text text-small">
+			<span class="tooltip">
+			<a href="https://whirlyram.github.io/aboutWhirly.net/doodles/writing-doodlez.html">Writing Doodles / Blurbs</a>
+			<span class="tooltip-text">My various small and/or fragmented pieces of creative writing</span>
+			</span>
+			</p>
+			</div>
 		<p class="center-text text-small">Misc. Art</p>
 		<p class="center-text text-small">My Time Capsule</p>
 	<div>
