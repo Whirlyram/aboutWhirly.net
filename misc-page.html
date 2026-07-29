@@ -7,7 +7,192 @@
   
 	<style>
 	  /* 1. Load your uploaded font */
+	  @font-face {<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Whirlyram</title>
+  
+	<style>
+	  /* 1. Load your uploaded font */
 	  @font-face {
+		font-family: 'myfavoritefont';
+		src: url('https://whirlyram.github.io/aboutWhirly.net/fonts/my-favorite-font.ttf') format('truetype');
+	  }
+
+	  body {
+		background-image: url('https://raw.githubusercontent.com/Whirlyram/aboutWhirly.net/refs/heads/main/background.png'); 
+		background-size: cover; 
+		background-position: center; 
+		background-repeat: no-repeat; 
+		background-attachment: fixed; 
+		background-color: #121212; 
+		color: #ffffff; 
+		margin: 0;
+		
+		/* Apply custom font globally */
+		font-family: 'myfavoritefont', sans-serif;
+	  }
+
+	  .content-box {
+		max-width: 650px;
+		margin: 60px auto;
+		padding: 30px;
+		background-color: rgba(0, 0, 0, 0.75); 
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+	  }
+
+	  /* 2. Apply outline to headings or text */
+	  h1
+	  {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
+	  }
+	  h3
+	  {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		text-align: center;
+	  }
+	  p
+	  {
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	  }
+	</style>
+
+  <style>
+    .content-box {
+      max-width: 650px;
+      margin: 60px auto;
+      padding: 12px;
+      background-color: rgba(196, 196, 196, 1); /* Semi-transparent dark box */
+      border-radius: 1px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+	
+	.center-text
+	{
+		text-align: center;
+	}
+	
+	.text-big
+	{
+		font-size: 36px;
+	}
+	
+	.text-medium
+	{
+		font-size: 24px;
+	}
+	
+	.text-small
+	{
+		font-size: 16px;
+	}
+	
+	.text-tiny
+	{
+		font-size: 12px;
+	}
+	
+		.image-container {
+	  max-width: 244px;
+	  margin: 20px auto; /* Adds space between your text box and the image */
+	  text-align: center; /* Centers the image horizontally */
+	}
+
+	/* Make sure the image doesn't overflow small screens */
+	.image-container img {
+	  max-width: 100%;
+	  height: auto;
+	  border-radius: 3px; /* Optional: gives the image smooth rounded corners */
+	  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: dark drop shadow */
+	}
+	
+	.color-yt
+	{
+		color: #FF4A47
+	}
+	
+	.color-twitch
+	{
+		color: #BE4AFF
+	}
+	
+	.color-contentwarning
+	{
+		color: #9F001D
+	}
+	
+	a
+	{
+		text-decoration: none;
+		color: #FFFFEB;
+	}
+	
+	a:hover
+	{
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+	
+	.tooltip
+	{
+		position: relative;
+		cursor: pointer;
+	}
+
+.tooltip-text
+{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #222;
+	color: #fff;
+	padding: 6px 10px;
+	border-radius: 2px;
+	white-space: nowrap;
+	font-size: 0.85em;
+	transition: opacity 1.5s ease;
+	z-index: 10;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+	
+</style>
+
+</head>
+<body>
+  <div class="content-box">
+    <h1>Misc. Stuffs :P</h1>
+	<p class="center-text text-medium">Here you can find miscellaneous info about various OC's, behind the scenes stuff, etc.</h3>
+  </div>
+
+	</div>
+		<p class="center-text text-medium">
+		<span class="tooltip">
+		<a href="https://whirlyram.github.io/aboutWhirly.net/misc/AFS-RAPTOR.html">AFS-RAPTOR</a>
+		<span class="tooltip-text">Agent Whirlwind's Main Weapon.
+		</span>
+		</p>
+		
+		<p class="center-text text-medium">
+		<span class="tooltip">
+		<a href="https://whirlyram.github.io/aboutWhirly.net/misc/your-sheep.html">Z-277</a>
+		<span class="tooltip-text">An original Z instance made for my Pressure AU.
+		</span>
+		</p>
+	</div>
+	
+</body>
+</html>
 		font-family: 'myfavoritefont';
 		src: url('https://whirlyram.github.io/aboutWhirly.net/fonts/my-favorite-font.ttf') format('truetype');
 	  }
