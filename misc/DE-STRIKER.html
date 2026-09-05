@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DE-STRIKER</title>
+
+  <style>
+    /* 1. Load your uploaded font */
+    @font-face {
+      font-family: 'myfavfont';
+      src: url('https://whirlyram.github.io/aboutWhirly.net/fonts/my-favorite-font.ttf') format('truetype');
+    }
+    body {
+      background-image: url('https://raw.githubusercontent.com/Whirlyram/aboutWhirly.net/refs/heads/main/gradientbg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+
+      /* Apply custom font globally */
+      font-family: 'myfavfont', sans-serif;
+    }
+
+    .content-box {
+      max-width: 650px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 2. Apply outline to headings or text */
+    h1 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+      text-align: center;
+    }
+    h3 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+      text-align: center;
+    }
+    p {
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+      text-stroke: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+  </style>
+
+  <style>
+    .content-box {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 12px;
+      background-color: rgba(196, 196, 196, 1); /* Semi-transparent dark box */
+      border-radius: 1px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .text-large {
+      font-size: 36px;
+    }
+
+    .text-medium {
+      font-size: 26px;
+    }
+
+    .text-small {
+      font-size: 21px;
+    }
+
+    .text-tiny {
+      font-size: 17px;
+    }
+
+    .image-container {
+      max-width: 244px;
+      margin: 20px auto; /* Adds space between your text box and the image */
+      text-align: center; /* Centers the image horizontally */
+    }
+
+    /* Make sure the image doesn't overflow small screens */
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px; /* Optional: gives the image smooth rounded corners */
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Optional: dark drop shadow */
+    }
+
+    /* ---------- Ammo dropdown styles ---------- */
+    .ammo-entry {
+      max-width: 600px;
+      margin: 10px auto 30px auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    /* image sits on the left, and never collapses/shrinks */
+    .ammo-entry .image-container {
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    /* the dropdown itself sits to the right of the image */
+    .ammo-entry .ammo-details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .ammo-details summary {
+      cursor: pointer;
+      list-style: none; /* hides the default triangle so we can use our own */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      user-select: none;
+    }
+
+    /* hide default arrow marker in Chrome/Safari */
+    .ammo-details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .ammo-details summary .arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+      font-size: 0.7em;
+    }
+
+    /* rotate arrow when the details element is open */
+    .ammo-details[open] summary .arrow {
+      transform: rotate(90deg);
+    }
+
+    .ammo-details summary:hover {
+      color: #ffcc66;
+    }
+
+    .ammo-text {
+      background-color: rgba(0, 0, 0, 0.55);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 6px;
+      text-align: left;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="content-box">
+    <h3 class="center-text text-large">The 'DE-STRIKER'</h3>
+    <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/DE-STRIKER.png?raw=true">
+    <p class="center-text">Agent Whirlwind's Sidearm</p>
+  </div>
+
+  <div>
+    <p class="center-text text-medium">The DE-STRIKER is a heavily modified Rhino chiappa with twin-drums, allowing it to hold 18 bullets at once.</p>
+    <p class="center-text text-medium">Due to the variety of threats encountered within the Hadal Blacksite, the Weapons Division has engineered several various types of ammunition to be used by the DE-STRIKER, as well as all other magnum-based firearms.</p>
+    <br>
+  </div>
+
+  <!-- ===== Ammo Type: .357 ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-normal.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>.357</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>The standard JHP round for Urbanshade's .357-caliber weaponry.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- ===== Ammo Type: LESS LETHAL ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-less_lethal.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Less Lethal Round</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: NEUROTOXIN ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-neuro.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Neuro-Round</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: EXPLOSIVE ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-boom.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Explosive</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: INCENDIARY ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-fire.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Incendiary</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: CRYO ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-cryo.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Cryo-Round</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: ACID ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-acid.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>Acid Round</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+  
+  <!-- ===== Ammo Type: SILLY ===== -->
+  <div class="ammo-entry">
+    <div class="image-container">
+      <img src="https://github.com/Whirlyram/aboutWhirly.net/blob/main/assets/bullet-confetti.png?raw=true">
+    </div>
+
+    <details class="ammo-details">
+      <summary class="text-small">
+        <span class="arrow">&#9654;</span>
+        <span>'FUN'fetti-Round</span>
+      </summary>
+
+      <div class="ammo-text text-tiny">
+        <p>wawa</p>
+      </div>
+    </details>
+  </div>
+
+</body>
+</html>
